@@ -1,0 +1,36 @@
+body {
+  padding: 50px;
+  font-family: 14px, 'Amatic SC', cursive;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.ball {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px; 
+	color: black;
+	}
+
+.ball:hover {
+    -moz-animation-name: rotate 1s linear 1;
+    -webkit-animation-name: rotate 1s linear 1;
+    animation-name: rotate 1s linear 1;
+}
+@-moz-keyframes rotate {
+    0%, 100% {-moz-transform: rotate(0deg);}
+    33% {-moz-transform: rotate(15deg);}
+    66% {-moz-transform: rotate(-15deg);}
+}
+@-webkit-keyframes rotate {
+    0%, 100% {-webkit-transform: rotate(0deg);}
+    33% {-webkit-transform: rotate(15deg);}
+    66% {-webkit-transform: rotate(-15deg);}
+}
+@keyframes rotate {
+    0%, 100% {transform: rotate(0deg);}
+    33% {transform: rotate(15deg);}
+    66% {transform: rotate(-15deg);}
+}

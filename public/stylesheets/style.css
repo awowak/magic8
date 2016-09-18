@@ -1,0 +1,83 @@
+body {
+	padding: 50px;
+	font-family:'Amatic SC',cursive;
+}
+
+a {
+	color: #00B7FF;
+}
+
+.ball {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-color: black;
+}
+
+.ball:hover {
+	width: 200px;
+	height: 200px;
+	border-radius: 75%;
+	background-color: gray;
+	border-color: black;
+}
+
+
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: purple;
+	margin: 10px;
+}
+
+.box:nth-of-type(1) {
+	transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.box:nth-of-type(2) {
+	transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.box:nth-of-type(1):hover {
+	background-color: red;
+	width: 200px;
+}
+
+.box:nth-of-type(2) {
+	transform: scale(4,2);
+
+}
+
+.box:nth-of-type(3) {
+	transform: translate(250px, 250px);
+
+}
+
+.box:nth-of-type(4) {
+	transform: rotate(30deg);
+
+}
+
+.box:nth-of-type(5) {
+	transform: rotateY(45deg);
+
+}
+
+.box:nth-of-type(6) {
+	animation: grow 2s infinite;
+
+}
+
+@keyframes grow {
+	0% {
+		width: 100px;
+	}
+	50% {
+		width: 700px;
+		transform: rotateX(40deg);
+	}
+	100%{
+		width: 300px;
+		transform: rotateX(90deg);
+	}
+}
